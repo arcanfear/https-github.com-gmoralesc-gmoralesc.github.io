@@ -13,7 +13,7 @@ html, body{
 
 body{
     color: $primary-color;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
     padding: 0;
@@ -28,12 +28,12 @@ h3{
 }
 
 p{
-    line-height: 24px;
+    line-height: 28px;
 }
 
 ul{
     li{
-        line-height: 24px;
+        line-height: 28px;
     }
 }
 
@@ -72,6 +72,15 @@ ul{
     .section{
         border-bottom: 1px solid $gray;
         padding: 16px 24px;
+    }
+
+    .comment{
+        color: $gray;
+        font-style: italic;
+
+        a{
+            color: darkgray;
+        }
     }
 }
 
