@@ -1,0 +1,38 @@
+{
+  "name": "gmoralesc.github.io",
+  "version": "1.0.0",
+  "description": "My personal webpage",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmoralesc/gmoralesc.github.io.git"
+  },
+  "keywords": [
+    "Gustavo",
+    "Morales",
+    "Web",
+    "Developer",
+    "JavaScript",
+    "Rails"
+  ],
+  "author": "Gustavo Morales <gustavo.morales@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmoralesc/gmoralesc.github.io/issues"
+  },
+  "homepage": "https://github.com/gmoralesc/gmoralesc.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^0.24.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  }
+}
