@@ -37,6 +37,11 @@ ul{
     }
 }
 
+select option{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
 // Layout
 .header{
     background-color: $lightgray;
@@ -81,6 +86,10 @@ ul{
         a{
             color: darkgray;
         }
+    }
+
+    .hidden{
+        display: none;
     }
 }
 

@@ -100,96 +100,166 @@
         <li>“Excelencia Académica en el Aula de Clase” (Award for Academic Excellence in the Classroom) 2009, 2010, 2011, 2012, 2013 - Universidad del Norte, Barranquilla, Colombia.</li>
       </ul>
     </section>
-    <section class="section">
+    <section class="section" id="technologies">
       <h2 class="section__title">Technologies</h2>
+      <label for="filter">Filter:</label>
+      <select onchange="filter_tecnologies()" id="filter">
+        <option value="0">Technologies that I worked so far</option>
+        <option value="1">Technologies that I want to work</option>
+        <option value="2">Technologies that I want to deprecated</option>
+      </select>
       <h3 class="section__subtitle">Front End</h3>
       <ul>
         <li>Basic
           <ul>
-            <li>HTML5</li>
-            <li>SASS <span class="comment">-- <a href="https://github.com/airbnb/css" target="_blank">Airbnb CSS / SASS Style Guide</a></span></li>
-            <li>jQuery</li>
+            <li data-stage="0 1">HTML5</li>
+            <li data-stage="0 1">SASS
+              <span class="comment" data-stage="0 1">-- <a href="https://github.com/airbnb/css" target="_blank">Airbnb CSS / SASS Style Guide</a></span>
+            </li>
+            <li data-stage="0 2">jQuery
+              <span class="comment hidden" data-stage="2">-- You can do a lot of things without jQuery and using HTML5 JavaScript API</span>
+            </li>
           </ul>
         </li>
-        <li>Javascript <span class="comment">-- <a href="https://github.com/airbnb/javascript" target="_blank">Airbnb JavaScript Style Guide</a></span>
+        <li data-stage="0 1">Javascript
+          <span class="comment" data-stage="0 1">-- <a href="https://github.com/airbnb/javascript" target="_blank">Airbnb JavaScript Style Guide</a></span>
           <ul>
-            <li>ES5 and ES2015</li>
-            <li>Babel <span class="comment">-- I don't know what to do without this guy</span></li>
+            <li data-stage="0 1">ES5 and ES2015</li>
+            <li data-stage="0 1">Babel
+              <span class="comment"  data-stage="0 1">-- I don't know what to do without this guy</span>
+            </li>
           </ul>
         </li>
-        <li>FrontEnd Frameworks
+        <li data-stage="0">FrontEnd Frameworks
           <ul>
-            <li>Foundation <span class="comment">-- Nice and clean</span></li>
-            <li>Bootstrap <span class="comment">-- More propular</span></li>
+            <li data-stage="0">Foundation
+              <span class="comment" data-stage="0">-- Nice and clean</span>
+            </li>
+            <li data-stage="0">Bootstrap
+              <span class="comment" data-stage="0">-- More propular</span>
+            </li>
           </ul>
         </li>
-        <li>Libraries and frameworks <span class="comment">-- If you have good bases of JavaScript you can adopt one of this guys very quickly</span>
+        <li>Libraries and frameworks
+          <span class="comment" data-stage="0 1">-- If you have good bases of JavaScript you can adopt one of this guys very quickly</span>
           <ul>
-            <li>Backbone JS and Loadash <span class="comment">-- Instant win<br> What happened with Underscore? Yes, also used but here is a <a href="http://stackoverflow.com/questions/13789618/differences-between-lodash-and-underscore#answer-13898916" target="_blank">cool response for that question</a></span></li>
-            <li>Ember JS<span class="comment"> -- I want to be honest, don't like, but the CLI is very nice like Rails</span></li>
-            <li>Angular JS (1.0) <span class="comment">-- Only basic stuff</span></li>
-            <li>Handlebars JS <span class="comment">-- Very nice</span></li>
-            <li><span class="comment">React JS -- Learning (20%). <a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank">Airbnb React/JSX Style Guide</a></span></li>
+            <li data-stage="0 2">Underscore
+              <span class="comment hidden" data-stage="2">-- Yes, now I prefer Lodash here is a <a href="http://stackoverflow.com/questions/13789618/differences-between-lodash-and-underscore#answer-13898916" target="_blank">cool response for that</a></span>
+            </li>
+            <li data-stage="0 1">Loadash
+              <span class="comment" data-stage="1">-- Yes, now I prefer Lodash here is a <a href="http://stackoverflow.com/questions/13789618/differences-between-lodash-and-underscore#answer-13898916" target="_blank">cool response for that</a></span>
+            </li>
+            <li data-stage="0 1">Backbone
+              <span class="comment" data-stage="0 1">-- Instant win</span>
+            </li>
+            <li data-stage="0 2">Ember JS
+              <span class="comment hidden" data-stage="2"> -- I want to be honest, don't like, but the CLI is very nice like Rails</span>
+            </li>
+            <li data-stage="0 2">Angular JS
+              <span class="comment" data-stage="0">-- (1.0) Only basic stuff</span>
+              <span class="comment" data-stage="2">-- (2.0) Don't want to go to TypeScript for the same reason I don't went to CoffeScript</span>
+            </li>
+            <li data-stage="0 1">Handlebars JS
+              <span class="comment" data-stage="0 1">-- Very nice</span>
+            </li>
+            <li data-stage="0 1">
+              <span class="comment" data-stage="0 1">React JS -- Learning (20%). <a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank">Airbnb React/JSX Style Guide</a></span>
+            </li>
           </ul>
         </li>
-        <li>Dependencies manager:
+        <li data-stage="0 1">Dependencies manager:
           <ul>
-            <li>npm <span class="comment">-- Preferred</span></li>
-            <li>bower</li>
+            <li data-stage="0 1">npm
+              <span class="comment" data-stage="0 1">-- Preferred</span>
+            </li>
+            <li data-stage="0">bower</li>
           </ul>
         </li>
         <li>Building tools
           <ul>
-            <li>npm and Webpack <span class="comment">-- Yes, check out this <a href="https://github.com/gmoralesc/boilerplate-npm-webpack" target="_blank">repo</a></span></li>
-            <li>Gulp <span class="comment">-- Simple and helpful</span></li>
-            <li>Grunt <span class="comment">-- Rarely used</span></li>
+            <li data-stage="0 1">npm and Webpack
+              <span class="comment" data-stage="0 1">-- Yes, check out this <a href="https://github.com/gmoralesc/boilerplate-npm-webpack" target="_blank">repo</a></span>
+            </li>
+            <li data-stage="0">Gulp
+              <span class="comment" data-stage="0">-- Simple and helpful</span>
+            </li>
+            <li data-stage="0 2">Grunt
+              <span class="comment hidden" data-stage="2">-- Rarely used</span>
+            </li>
           </ul>
         </li>
         <li>Testing
           <ul>
-            <li>Mocha and Chai <span class="comment">-- Unit Testing</span></li>
-            <li>Sinon JS <span class="comment">-- Add spies and fake AJAX calls</span></li>
-            <li>Jasimne <span class="comment">-- Yes, but I prefer combination above</span></li>
-            <li>Karma and Phantom JS <span class="comment">-- Integration Testing</span></li>
+            <li data-stage="0 1">Mocha and Chai
+              <span class="comment" data-stage="0 1">-- Unit Testing</span>
+            </li>
+            <li data-stage="0 1">Sinon JS
+              <span class="comment" data-stage="0 1">-- Add spies and fake AJAX calls</span>
+            </li>
+            <li data-stage="0 2">Jasimne
+              <span class="comment hidden" data-stage="2">-- Yes, but I prefer Mocha, Chai, Sinon combination</span>
+            </li>
+            <li data-stage="0 1">Karma and Phantom JS
+              <span class="comment" data-stage="0 1">-- Integration Testing</span>
+            </li>
           </ul>
         </li>
       </ul>
-      <h3 class="section__subtitle">Middleware</h3>
+      <h3 class="section__subtitle"  data-stage="0 1">Middleware</h3>
       <ul>
-        <li>Node JS <span class="comment">-- This guy is a whole new world</span></li>
-        <li>Express JS <span class="comment">-- Small but powerful</span></li>
-        <li>MongoDB <span class="comment">-- Basic use</span></li>
+        <li data-stage="0 1">Node JS
+          <span class="comment" data-stage="0 1">-- This guy is a whole new world</span>
+        </li>
+        <li data-stage="0 1">Express JS
+          <span class="comment" data-stage="0 1">-- Small but powerful</span>
+        </li>
+        <li data-stage="0 1">MongoDB
+          <span class="comment" data-stage="0 1">-- Basic use</span>
+        </li>
       </ul>
       <h3 class="section__subtitle">Backend</h3>
       <ul>
-        <li>PHP <span class="comment">-- Yes, I worked a lot of years with it</span>
+        <li data-stage="0 2">PHP
+          <span class="comment" data-stage="0">-- Yes, I worked a lot of years with it</span>
+          <span class="comment hidden" data-stage="2">-- I preferred Ruby</span>
           <ul>
-            <li>Apache and MySQL with PHP old schools coding <span class="comment">-- Check out this <a href="https://github.com/gmoralesc/timetracker" target="_blank">repo</a></span></li>
-            <li>Laravel <span class="comment">-- My respects over other frameworks in PHP, basic stuff</span></li>
-            <li>Some Joomla and Wordpress works</li>
+            <li data-stage="0">Apache and MySQL with PHP old schools coding
+              <span class="comment" data-stage="0">-- Check out this <a href="https://github.com/gmoralesc/timetracker" target="_blank">repo</a></span>
+            </li>
+            <li data-stage="0">Laravel
+              <span class="comment" data-stage="0">-- My respects over other frameworks in PHP, basic stuff</span>
+            </li>
+            <li data-stage="0">Some Joomla and Wordpress works</li>
           </ul>
         </li>
-        <li>Ruby on Rails <span class="comment">-- Of course, first met Ruby and later Rails, bye PHP</span>
+        <li data-stage="0 1">Ruby on Rails
+          <span class="comment" data-stage="0">-- Of course, first met Ruby and later Rails, bye PHP</span>
           <ul>
-            <li>Ruby <span class="comment"> -- basic, only necessary to work with Rails. <a href="https://github.com/airbnb/ruby">Airbnb Ruby Style Guide</a></span></li>
-            <li>Fullstack with PostgreSQL <span class="comment">-- check out this <a href="https://github.com/gmoralesc/photobook/" target="_blank">repo</a></span></li>
-            <li>BDD with RSpec, Factory Girl, Faker, Capybara and Cucumber <span class="comment">-- check out this <a href="https://github.com/gmoralesc/photobook/wiki/Validations-and-BDD" target="_blank">wiki page</a></span></li>
+            <li data-stage="0 1">Ruby
+              <span class="comment" data-stage="0 1"> -- basic, only necessary to work with Rails. <a href="https://github.com/airbnb/ruby">Airbnb Ruby Style Guide</a></span>
+            </li>
+            <li data-stage="0 1">Fullstack with PostgreSQL
+              <span class="comment" data-stage="0 1">-- check out this <a href="https://github.com/gmoralesc/photobook/" target="_blank">repo</a></span>
+            </li>
+            <li data-stage="0 1">BDD with RSpec, Factory Girl, Faker, Capybara and Cucumber
+              <span class="comment" data-stage="0 1">-- check out this <a href="https://github.com/gmoralesc/photobook/wiki/Validations-and-BDD" target="_blank">wiki page</a></span>
+            </li>
           </ul>
         </li>
       </ul>
-      <h3 class="section__subtitle">Tools and platforms</h3>
+      <h3 class="section__subtitle" data-stage="0 1">Tools and platforms</h3>
       <ul>
-        <li>Git and Github <span class="comment">-- I love command line with ZSH</span></li>
-        <li>Vagrant and VirtualBox <span class="comment">-- Pending to learn Docker</span></li>
-        <li>Heroku <span class="comment">-- Easy to use</span></li>
-        <li>Travis CI <span class="comment">-- Very nice and simple</span></li>
+        <li data-stage="0 1">Git and Github <span class="comment">-- I love command line with ZSH</span></li>
+        <li data-stage="0">Vagrant and VirtualBox <span class="comment">-- Pending to learn Docker</span></li>
+        <li data-stage="0 1">Heroku <span class="comment">-- Easy to use</span></li>
+        <li data-stage="0 1">Travis CI <span class="comment">-- Very nice and simple</span></li>
       </ul>
-      <h3 class="section__subtitle">Methodolgies</h3>
+      <h3 class="section__subtitle" data-stage="0 1">Methodolgies</h3>
       <ul>
-        <li>Basic CEO</li>
-        <li>BEM Notation</li>
-        <li>TDD and BDD</li>
-        <li>SCRUM</li>
+        <li data-stage="0 1">Basic CEO</li>
+        <li data-stage="0 1">BEM Notation</li>
+        <li data-stage="0 1">TDD and BDD</li>
+        <li data-stage="0 1">SCRUM</li>
       </ul>
     </section>
     <section class="section">
@@ -221,6 +291,35 @@
       </ul>
     </section>
   </section>
+  <script>
+  function removeClass(el, className){
+    if( el.className.indexOf(className) !== -1){
+        el.className = el.className.slice(0,el.className.indexOf("hidden")-1);
+    }
+  }
+
+  function addClass(el, className){
+    el.className = el.className + " " + className;
+  }
+
+  function filter_tecnologies() {
+    var filter = document.getElementById("filter");
+    var selected_filter = filter.options[filter.selectedIndex].value;
+    var tecnologies_section = document.getElementById("technologies");
+    var items = tecnologies_section.querySelectorAll("li, span, h3");
+
+    for (var index = 0; index < items.length; index++) {
+      var data_stage = items[index].getAttribute("data-stage");
+      if (data_stage) {
+        if (data_stage.indexOf(selected_filter) >= 0) {
+          removeClass(items[index], "hidden");
+        } else {
+          addClass(items[index], "hidden");
+        }
+      }
+    }
+  }
+  </script>
 </body>
 
 </html>
