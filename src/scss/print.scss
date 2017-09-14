@@ -1,0 +1,10 @@
+.card{
+  &__image{
+    height: 50%;
+  }
+}
+
+@page { 
+  size: auto;
+  margin: 5mm 10mm;
+}
