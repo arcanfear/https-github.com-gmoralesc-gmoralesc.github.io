@@ -4,7 +4,17 @@
   }
 }
 
+a, a:link, a:visited{
+  color: black;
+  text-decoration: none;
+}
+
 @page { 
   size: auto;
   margin: 5mm 10mm;
+}
+
+.page-break{ 
+  display: block; 
+  page-break-before: always; 
 }
