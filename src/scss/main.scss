@@ -93,3 +93,27 @@ select option{
     }
 }
 
+.list{
+    &--boxes{
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
+
+.box{
+    &__container{
+        border-bottom: 1p solid gray;
+        list-style-type: none;
+    }
+    &__item{
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__left{
+        width: 100px;
+    }
+    &__description{
+        width: calc(100% - 130px);
+    }
+}
+
