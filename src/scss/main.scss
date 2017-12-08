@@ -21,6 +21,11 @@ body{
 
 h1, h2, h3{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h2{
+    margin-bottom: 8px;
 }
 
 h3{
@@ -110,10 +115,10 @@ select option{
         vertical-align: top;
     }
     &__left{
-        width: 100px;
+        width: 165px;
     }
     &__description{
-        width: calc(100% - 130px);
+        width: calc(100% - 170px);
     }
 }
 
