@@ -4,6 +4,7 @@ $lightgray: #FBFBFB;
 $gray: #CCC;
 
 // Breakpoints
+$small: 768px;
 $wide: 1024px;
 
 // Base
@@ -116,9 +117,15 @@ select option{
     }
     &__left{
         width: 165px;
+        @media(max-width:#{$small}){
+            width: 100%;
+        }
     }
     &__description{
         width: calc(100% - 170px);
+        @media(max-width:#{$small}){
+            width: 100%;
+        }
     }
 }
 
