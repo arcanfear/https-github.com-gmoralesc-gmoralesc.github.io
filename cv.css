@@ -1,0 +1,35 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 12px 0 4px 0;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 4px 0;
+}
+
+p {
+  line-height: 14px;
+  margin: 4px 0;
+}
+
+strong {
+  font-weight: 400;
+}
+
+.content {
+  columns: 2;
+}
+
+.no-print {
+  display: none;
+}
