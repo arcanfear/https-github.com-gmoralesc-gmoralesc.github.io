@@ -1,3 +1,8 @@
+* {
+  background-color: white;
+  color: black;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -5,29 +10,52 @@ body {
 }
 
 h1 {
+  border-bottom: 1px solid black;
   font-size: 16px;
   font-weight: 400;
+  padding-bottom: 2px;
   margin: 12px 0 4px 0;
-  text-decoration: underline;
+}
+
+h1:first-child {
+  margin-top: 0;
 }
 
 h2 {
+  border-bottom: 1px solid lightgrey;
   font-size: 14px;
   font-weight: 400;
   margin: 4px 0;
+  padding-bottom: 2px;
 }
 
 p {
-  line-height: 14px;
+  line-height: 18px;
   margin: 4px 0;
 }
 
+ul {
+  margin: 10px 0;
+}
+
 strong {
-  font-weight: 400;
+  font-weight: 500;
+}
+
+a,
+a:hover,
+a:link,
+a:active {
+  color: #34b1ff;
+  text-decoration: none;
 }
 
 .content {
   columns: 2;
+}
+
+.title h1 {
+  font-size: 20px;
 }
 
 .no-print {
